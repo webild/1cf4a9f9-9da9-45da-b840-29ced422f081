@@ -6,6 +6,7 @@ import SocialsAbout from '@/components/sections/layouts/about/SocialsAbout';
 import HowToBuy2D from '@/components/sections/layouts/howtobuy/2DHTB';
 import TextGridTokenomics from '@/components/sections/layouts/tokenomics/TextGridTokenomics';
 import FooterBase from '@/components/footer/FooterBase';
+import AccordionStandardExpand from '@/components/accordions/AccordionStandardExpand';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
           { name: 'about', id: 'about' },
           { name: 'how-to-buy', id: 'how-to-buy' },
           { name: 'tokenomics', id: 'tokenomics' },
+          { name: 'faq', id: 'faq' },
           { name: 'footer', id: 'footer' }
         ]}
         logoSrc="/images/logo.svg"
@@ -32,6 +34,9 @@ export default function Home() {
       </div>
       <div id="tokenomics" data-section="tokenomics" className="scroll-mt-24">
         <TextGridTokenomics title="Tokenomics Overview" description="Detailed insights into our token distribution" tokenData={[{ value: "10M", description: "Total Supply" }, { value: "5M", description: "Circulating Supply" }]} />
+      </div>
+      <div id="faq" data-section="faq" className="scroll-mt-24">
+        <AccordionStandardExpand title="Frequently Asked Questions" items={[{ title: "What is this site about?", content: "Details about the site." }, { title: "How do I buy?", content: "Steps to purchase." }]} />
       </div>
       <div id="footer" data-section="footer" className="scroll-mt-24">
         <FooterBase logoSrc="/images/logo.svg" logoWidth={100} logoHeight={50} columns={[
