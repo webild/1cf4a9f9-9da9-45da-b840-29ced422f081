@@ -19,7 +19,6 @@ export default function Home() {
           { name: 'footer', id: 'footer' }
         ]}
         logoSrc="/images/logo.svg"
-        logoAlt="Sample Brand"
         buttonText="Get Started"
       />
       <div id="hero" data-section="hero" className="scroll-mt-24">
